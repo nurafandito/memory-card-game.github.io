@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Card Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <span class="title" id="demo"></span>
+        <div class="details">
+          <ul>
+            <li onclick="playDemo()"><i class="uil uil-game-structure"></i>&ensp;Play Game</li>
+            <li onclick="options()"><i class="uil uil-setting"></i>&ensp;Options</li>
+            <li onclick="quit()"><i class="uil uil-times"></i>&ensp;Quit</li>
+          </ul>
+        </div>
+        <div class="play-game">
+          <ul>
+            <li onclick="playDemo1()"><i class="uil uil-airplay"></i>&ensp;Play Game [Demo 1]</li>
+            <li onclick="playDemo2()"><i class="uil uil-airplay"></i>&ensp;Play Game [Demo 2]</li>
+            <li onclick="toMenu()"><i class="uil uil-arrow-left"></i>&ensp;Back</li>
+          </ul>
+        </div>
+        <div class="set-time">
+          <div class="details">
+            <button id="timeValue1" value="20" onclick="setTimer1()">
+              Time: <span><b>20</b>s</span>
+            </button>
+            <button id="timeValue2" value="30" onclick="setTimer2()">
+              Time: <span><b>30</b>s</span>
+            </button>
+            <button id="timeValue3" value="40" onclick="setTimer3()">
+              Time: <span><b>40</b>s</span>
+            </button>
+          </div>
+        </div>
+        <div class="options">
+          <div class="content">
+            <div class="input-field">
+              <input type="text" id="myText" placeholder="Enter your new name" required />
+              <i class="uil uil-user icon"></i>
+            </div>
+            <div class="buttons">
+              <button onclick="save()">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
