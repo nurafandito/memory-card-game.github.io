@@ -13,8 +13,7 @@ body {
   min-height: 100vh;
   background: #fb2576;
 }
-.container .intro,
-.container .menu {
+.container {
   width: 400px;
   padding: 25px;
   border-radius: 10px;
@@ -135,4 +134,23 @@ ul li:hover {
 .set-time .details button:hover {
   color: #fff;
   background: #fb2576;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    height: 100%;
+    width: 350px;
+  }
+  .container .title {
+    font-size: 20px;
+  }
+  .set-time .details button {
+    cursor: pointer;
+    font-size: 13px;
+    color: #fb2576;
+    border-radius: 4px;
+    padding: 3px 10px;
+    background: #fff;
+    border: 1px solid #fb2576;
+    transition: 0.3s ease;
+  }
 }
